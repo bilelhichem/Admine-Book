@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bb"
+    android:padding="5dp"
+    >
+
+<FrameLayout
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/linsec"
+    >
+
+</FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linsec"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:background="@drawable/backedit"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardhome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="13dp"
+            android:layout_marginRight="40dp"
+            app:cardBackgroundColor="@color/red"
+            >
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/add"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                app:tint="@color/white">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardajoute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="13dp"
+            app:cardBackgroundColor="#222227"
+            android:layout_marginLeft="40dp"
+            >
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icons8_home_25"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                app:tint="@color/white">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
